@@ -1,0 +1,99 @@
+WARNING: reaching max number of iterations
+Accuracy = 85.3333% (256/300) (classification)
+
+WARNING: reaching max number of iterations
+Accuracy = 88.6667% (266/300) (classification)
+10 87.0
+
+WARNING: reaching max number of iterations
+Accuracy = 88.6667% (266/300) (classification)
+
+WARNING: reaching max number of iterations
+Accuracy = 91% (273/300) (classification)
+20 89.83333333333334
+
+WARNING: reaching max number of iterations
+Accuracy = 87.3333% (262/300) (classification)
+Accuracy = 94.6667% (284/300) (classification)
+30 91.0
+Accuracy = 90.6667% (272/300) (classification)
+Accuracy = 91% (273/300) (classification)
+40 90.83333333333334
+Accuracy = 89.3333% (268/300) (classification)
+Accuracy = 92% (276/300) (classification)
+50 90.66666666666666
+Accuracy = 89.3333% (268/300) (classification)
+Accuracy = 92% (276/300) (classification)
+60 90.66666666666666
+Accuracy = 92% (276/300) (classification)
+Accuracy = 93.6667% (281/300) (classification)
+70 92.83333333333334
+Accuracy = 90.3333% (271/300) (classification)
+Accuracy = 92.3333% (277/300) (classification)
+80 91.33333333333333
+Accuracy = 92.6667% (278/300) (classification)
+Accuracy = 93% (279/300) (classification)
+90 92.83333333333334
+Accuracy = 89.6667% (269/300) (classification)
+Accuracy = 94.3333% (283/300) (classification)
+100 92.0
+Accuracy = 89.6667% (269/300) (classification)
+Accuracy = 94.6667% (284/300) (classification)
+110 92.16666666666667
+Accuracy = 88.6667% (266/300) (classification)
+Accuracy = 94.6667% (284/300) (classification)
+120 91.66666666666667
+Accuracy = 90.6667% (272/300) (classification)
+Accuracy = 93% (279/300) (classification)
+130 91.83333333333334
+Accuracy = 93% (279/300) (classification)
+Accuracy = 94.6667% (284/300) (classification)
+140 93.83333333333334
+Accuracy = 91% (273/300) (classification)
+Accuracy = 94% (282/300) (classification)
+150 92.5
+Accuracy = 90.6667% (272/300) (classification)
+Accuracy = 94.3333% (283/300) (classification)
+160 92.5
+Accuracy = 92% (276/300) (classification)
+Accuracy = 95% (285/300) (classification)
+170 93.5
+Accuracy = 92.6667% (278/300) (classification)
+Accuracy = 94.6667% (284/300) (classification)
+180 93.66666666666667
+Accuracy = 92% (276/300) (classification)
+Accuracy = 94% (282/300) (classification)
+190 93.0
+Accuracy = 93% (279/300) (classification)
+Accuracy = 95.6667% (287/300) (classification)
+200 94.33333333333334
+Accuracy = 92% (276/300) (classification)
+Accuracy = 94% (282/300) (classification)
+210 93.0
+Accuracy = 93% (279/300) (classification)
+Accuracy = 94.6667% (284/300) (classification)
+220 93.83333333333334
+Accuracy = 92.3333% (277/300) (classification)
+Accuracy = 94.6667% (284/300) (classification)
+230 93.5
+Accuracy = 92.6667% (278/300) (classification)
+Accuracy = 95.3333% (286/300) (classification)
+240 94.0
+Accuracy = 93% (279/300) (classification)
+Accuracy = 95.3333% (286/300) (classification)
+250 94.16666666666666
+Accuracy = 93% (279/300) (classification)
+Accuracy = 95.6667% (287/300) (classification)
+260 94.33333333333334
+Accuracy = 92.6667% (278/300) (classification)
+Accuracy = 96% (288/300) (classification)
+270 94.33333333333334
+Accuracy = 92.3333% (277/300) (classification)
+Accuracy = 95% (285/300) (classification)
+280 93.66666666666666
+Accuracy = 92.6667% (278/300) (classification)
+Accuracy = 95% (285/300) (classification)
+290 93.83333333333334
+Accuracy = 92.6667% (278/300) (classification)
+Accuracy = 95.3333% (286/300) (classification)
+300 94.0

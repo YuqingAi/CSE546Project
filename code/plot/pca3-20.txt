@@ -1,0 +1,123 @@
+WARNING: reaching max number of iterations
+Accuracy = 50% (150/300) (classification)
+
+WARNING: reaching max number of iterations
+Accuracy = 67.6667% (203/300) (classification)
+3 58.833333333333336
+
+WARNING: reaching max number of iterations
+Accuracy = 62.6667% (188/300) (classification)
+
+WARNING: reaching max number of iterations
+Accuracy = 70.6667% (212/300) (classification)
+4 66.66666666666667
+
+WARNING: reaching max number of iterations
+Accuracy = 66.6667% (200/300) (classification)
+
+WARNING: reaching max number of iterations
+Accuracy = 71.6667% (215/300) (classification)
+5 69.16666666666667
+
+WARNING: reaching max number of iterations
+Accuracy = 74.6667% (224/300) (classification)
+
+WARNING: reaching max number of iterations
+Accuracy = 82.6667% (248/300) (classification)
+6 78.66666666666667
+
+WARNING: reaching max number of iterations
+Accuracy = 85.3333% (256/300) (classification)
+
+WARNING: reaching max number of iterations
+Accuracy = 86.3333% (259/300) (classification)
+7 85.83333333333333
+
+WARNING: reaching max number of iterations
+Accuracy = 85.6667% (257/300) (classification)
+
+WARNING: reaching max number of iterations
+Accuracy = 84.3333% (253/300) (classification)
+8 85.0
+
+WARNING: reaching max number of iterations
+Accuracy = 84.3333% (253/300) (classification)
+
+WARNING: reaching max number of iterations
+Accuracy = 85.3333% (256/300) (classification)
+9 84.83333333333333
+
+WARNING: reaching max number of iterations
+Accuracy = 85% (255/300) (classification)
+
+WARNING: reaching max number of iterations
+Accuracy = 90.3333% (271/300) (classification)
+10 87.66666666666666
+
+WARNING: reaching max number of iterations
+Accuracy = 85% (255/300) (classification)
+
+WARNING: reaching max number of iterations
+Accuracy = 85.6667% (257/300) (classification)
+11 85.33333333333334
+
+WARNING: reaching max number of iterations
+Accuracy = 85.6667% (257/300) (classification)
+
+WARNING: reaching max number of iterations
+Accuracy = 89.3333% (268/300) (classification)
+12 87.5
+
+WARNING: reaching max number of iterations
+Accuracy = 84.6667% (254/300) (classification)
+
+WARNING: reaching max number of iterations
+Accuracy = 87.6667% (263/300) (classification)
+13 86.16666666666667
+
+WARNING: reaching max number of iterations
+Accuracy = 86.3333% (259/300) (classification)
+
+WARNING: reaching max number of iterations
+Accuracy = 89.3333% (268/300) (classification)
+14 87.83333333333333
+
+WARNING: reaching max number of iterations
+Accuracy = 85.6667% (257/300) (classification)
+
+WARNING: reaching max number of iterations
+Accuracy = 89.6667% (269/300) (classification)
+15 87.66666666666667
+
+WARNING: reaching max number of iterations
+Accuracy = 85.3333% (256/300) (classification)
+Accuracy = 92.3333% (277/300) (classification)
+16 88.83333333333333
+
+WARNING: reaching max number of iterations
+Accuracy = 84.6667% (254/300) (classification)
+
+WARNING: reaching max number of iterations
+Accuracy = 92.6667% (278/300) (classification)
+17 88.66666666666667
+
+WARNING: reaching max number of iterations
+Accuracy = 85.3333% (256/300) (classification)
+
+WARNING: reaching max number of iterations
+Accuracy = 93.6667% (281/300) (classification)
+18 89.5
+
+WARNING: reaching max number of iterations
+Accuracy = 85.6667% (257/300) (classification)
+
+WARNING: reaching max number of iterations
+Accuracy = 91.3333% (274/300) (classification)
+19 88.5
+
+WARNING: reaching max number of iterations
+Accuracy = 86.3333% (259/300) (classification)
+
+WARNING: reaching max number of iterations
+Accuracy = 92.3333% (277/300) (classification)
+20 89.33333333333333

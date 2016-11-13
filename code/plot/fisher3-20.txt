@@ -1,0 +1,55 @@
+C:\Users\yuqingai\Desktop\courses\CSE546\project\code>selection.py
+Accuracy = 72.6667% (218/300) (classification)
+Accuracy = 74% (222/300) (classification)
+3 73.33333333333334
+Accuracy = 72.6667% (218/300) (classification)
+Accuracy = 77.3333% (232/300) (classification)
+4 75.0
+Accuracy = 72.6667% (218/300) (classification)
+Accuracy = 77.6667% (233/300) (classification)
+5 75.16666666666667
+Accuracy = 72.6667% (218/300) (classification)
+Accuracy = 77.6667% (233/300) (classification)
+6 75.16666666666667
+Accuracy = 74.6667% (224/300) (classification)
+Accuracy = 77.6667% (233/300) (classification)
+7 76.16666666666667
+Accuracy = 75.3333% (226/300) (classification)
+Accuracy = 80% (240/300) (classification)
+8 77.66666666666666
+Accuracy = 80.6667% (242/300) (classification)
+Accuracy = 84.3333% (253/300) (classification)
+9 82.5
+Accuracy = 78% (234/300) (classification)
+Accuracy = 84.3333% (253/300) (classification)
+10 81.16666666666666
+Accuracy = 78.3333% (235/300) (classification)
+Accuracy = 88.6667% (266/300) (classification)
+11 83.5
+Accuracy = 80.3333% (241/300) (classification)
+Accuracy = 88.6667% (266/300) (classification)
+12 84.5
+Accuracy = 81.3333% (244/300) (classification)
+Accuracy = 88.6667% (266/300) (classification)
+13 85.0
+Accuracy = 81.3333% (244/300) (classification)
+Accuracy = 88.6667% (266/300) (classification)
+14 85.0
+Accuracy = 83.6667% (251/300) (classification)
+Accuracy = 86.3333% (259/300) (classification)
+15 85.0
+Accuracy = 84% (252/300) (classification)
+Accuracy = 86.3333% (259/300) (classification)
+16 85.16666666666666
+Accuracy = 81.6667% (245/300) (classification)
+Accuracy = 85% (255/300) (classification)
+17 83.33333333333334
+Accuracy = 83.3333% (250/300) (classification)
+Accuracy = 85.3333% (256/300) (classification)
+18 84.33333333333333
+Accuracy = 83.6667% (251/300) (classification)
+Accuracy = 87.3333% (262/300) (classification)
+19 85.5
+Accuracy = 83.3333% (250/300) (classification)
+Accuracy = 85% (255/300) (classification)
+20 84.16666666666666
