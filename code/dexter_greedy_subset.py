@@ -19,7 +19,8 @@ def load_data(X_filename):
                     [feature, val] = token.split(":")
                     cur[int(feature)] = int(val) / 1000.0
             res += [cur]
-    return np.array(res)
+    res = np.array(res)
+    return (res - np.mean(res)) / np.std(res)
 
 def load_labels(Y_filename):
     res = []
@@ -33,16 +34,27 @@ def loss01(Y_predict, Y_real):
     return np.sum(Y_predict != Y_real)
 
 def solve_SFG():
+    # 300 * 20000
+    # Y labels +1/-1
     X_train = load_data("dexter_train.data")
     Y_train = load_labels("dexter_train.labels")
     X_valid = load_data("dexter_valid.data")
     Y_valid = load_labels("dexter_valid.labels")
+    X_valid, X_test = X_valid[0:100], X_valid[100:]
+    Y_valid, Y_test = Y_valid[0:100], Y_valid[100:]
+
+    # reorganize to
+    # 200 train, 200 valid, 200 test
+    X_valid = np.append(X_valid, X_train[0:100], axis=0)
+    Y_valid = np.append(Y_valid, Y_train[0:100], axis=0)
+    X_train = X_train[100:]
+    Y_train = Y_train[100:]
     print "data loaded"
 
-    n, d = X_train.shape
-    m, d = X_valid.shape
+    # n, d = X_train.shape
+    # m, d = X_valid.shape
 
-    # num_iters = 300
+    # num_iters = 70
     # selected = []
 
     # for i in range(num_iters):
@@ -51,8 +63,8 @@ def solve_SFG():
     #     accuracy_cancidates = np.zeros((len(candidates),))
 
     #     for j in range(len(candidates)):
-    #         # if j % 1000 == 0:
-    #         #     print j,
+    #         if j % 1000 == 0:
+    #             print j,
     #         temp = selected + [candidates[j]]
     #         X_train_selected = X_train[:, temp]
     #         X_valid_selected = X_valid[:, temp]
@@ -76,37 +88,35 @@ def solve_SFG():
     #     print "iter=" + str(i) + "\tloss01=" + str(np.max(accuracy_cancidates))
     #     print selected
 
-    features_added = [10244, 626, 12610, 1565, 8789, 9614, 15798, 3433, 10218, 2062, 2402,
-        6084, 8786, 5507, 268, 14973, 2990, 9056, 18413, 370, 14161, 9849, 7596, 6153,
-        17942, 7055, 4308, 13685, 4153, 10779, 17471, 13165, 19327, 12666, 10848, 13929,
-        12732, 8342, 13863, 4698, 4576, 17173, 17356, 19890, 13881, 16810, 1244, 1987, 3932,
-        18115, 4722, 14278, 6554, 8202, 18833, 4857, 10663, 4383, 12196, 16638, 2185, 11140,
-        448, 14662, 8707, 12184]
+    features_added = [12916, 12610, 3433, 17104, 19674, 14844, 4637, 3870, 7577,
+        18201, 2851, 17356, 5435, 18224, 9734, 16511, 5801, 4074, 3147, 15937,
+        7651, 2982, 14994, 9419, 16509, 4325, 15629, 14299, 5075, 13587, 12552,
+        4644, 17228, 14645, 3313, 17812, 8361, 3814, 12233, 11324, 5575, 18976,
+        2472, 12042, 5658, 7652, 14573, 14892, 18801, 11188, 12026, 12245, 9494,
+        17541, 17700, 5549, 12311, 19863, 13398, 16561, 1058, 2368, 619, 10539,
+        17484, 5203, 17080, 19109, 10292, 4857]
+    # features_added = selected
 
-    accuracy2fold = []
+    accuracies = []
     selected = []
 
     for next_best in features_added:
         selected += [next_best]
         X_train_selected = X_train[:, selected]
-        X_valid_selected = X_valid[:, selected]
+        X_test_selected = X_test[:, selected]
 
         clf = SVC(kernel="linear")
         clf.fit(X_train_selected, Y_train)
-        prediction = clf.predict(X_valid_selected)
-        accuracy = 1 - loss01(prediction, Y_valid) * 1.0 / m
+        prediction = clf.predict(X_test_selected)
+        accuracy = 1 - loss01(prediction, Y_test) * 1.0 / Y_test.shape[0]
 
-        clf = SVC(kernel="linear")
-        clf.fit(X_valid_selected, Y_valid)
-        prediction = clf.predict(X_train_selected)
-        accuracy += 1 - loss01(prediction, Y_train) * 1.0 / n
-        accuracy /= 2
+        accuracies += [accuracy]
+        
 
-        print accuracy
-        accuracy2fold += [accuracy]
+    print accuracies
 
     plt.figure()
-    plt.plot(range(len(accuracy2fold)), accuracy2fold, '-r')
+    plt.plot(np.array(range(len(accuracies))) + 1, accuracies, '-r')
 
     plt.ylabel('Accuracy')
     plt.xlabel('k')
