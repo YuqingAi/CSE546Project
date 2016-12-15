@@ -54,7 +54,7 @@ f = open('pca2','w')
 
 d = lDim
 while d <= uDim:
-	
+	"""
 	X = np.zeros((len(Xtrain), Dim))
 	for i in range(len(Xtrain)):
 		for j in Xtrain[i]:
@@ -67,7 +67,24 @@ while d <= uDim:
 		for j in Xtest[i]:
 			X[i, j] = Xtest[i][j]
 	XXtest = pca.transform(X).tolist()
+	"""
 	
+	Dim1 = Dim
+	Dim2 = d
+	R = np.random.normal(0, 1, (Dim1, Dim2))
+	X = np.zeros((len(Xtrain), Dim1))
+	for i in range(len(Xtrain)):
+		for j in Xtrain[i]:
+			X[i, j] = Xtrain[i][j]
+	X = X.dot(R)
+	XXtrain = X.tolist()
+
+	X = np.zeros((len(Xtest), Dim1))
+	for i in range(len(Xtest)):
+		for j in Xtest[i]:
+			X[i, j] = Xtest[i][j]
+	X = X.dot(R)
+	XXtest = X.tolist()
 	#print(len(XXtest[0]))
 	m = svm_train(Ytrain, XXtrain, '-t 0 -q')
 	p_label, p_acc, p_val = svm_predict(Ytest, XXtest, m)
